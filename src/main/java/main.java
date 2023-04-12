@@ -18,7 +18,7 @@ public class main {
         * Task 2
         */
 
-        char[] inputArray = new char[]{4,3, 34, 76, 23, 5};
+        int[] inputArray = new int[]{4,3, 34, 76, 23, 5};
 
         //See algorithms class for implementation
         algorithms.selectionSort(inputArray);
