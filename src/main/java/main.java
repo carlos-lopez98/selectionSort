@@ -14,6 +14,14 @@ public class main {
         System.out.println("Hello World");
 
 
+        /*
+        * Task 2
+        */
+
+        char[] inputArray = new char[]{4,3, 34, 76, 23, 5};
+
+        algorithms.selectionSort(inputArray);
+
 
 
     }
