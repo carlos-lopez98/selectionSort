@@ -20,9 +20,10 @@ public class main {
 
         char[] inputArray = new char[]{4,3, 34, 76, 23, 5};
 
+        //See algorithms class for implementation
         algorithms.selectionSort(inputArray);
-
-
-
+        algorithms.bubbleSort(inputArray);
+        algorithms.heapSort(inputArray);
+        algorithms.quickSort(inputArray);
     }
 }
