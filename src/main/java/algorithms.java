@@ -1,26 +1,30 @@
 public class algorithms {
 
 
-    public static int[] selectionSort(int[] array){
+    public static void selectionSort(int[] array){
 
-        int[] sortedArray = new int[array.length];
 
-        for (int i =0; i < array.length; i++){
-            int firstVar = array[i];
-
+        for (int i = 0; i < array.length; i++){
+            //Stores initial values
+            int minIndex = i;
+            int minVal = array[i];
 
             for(int j = i + 1; j < array.length; j++){
-                int secondVar = array[j];
+                int secondIndex = j;
+                int currentVal = array[j];
 
-                if(secondVar < firstVar) {
-                        firstVar = secondVar;
+                //Does comparison
+                if(currentVal < minVal) {
+                    minVal = currentVal;
+                    minIndex = secondIndex;
                 }
             }
 
-            sortedArray[i] = firstVar;
+            //Do the swap
+            int temp = array[i];
+            array[minIndex] = temp;
+            array[i] = minVal;
         }
-
-        return sortedArray;
     }
 
 
