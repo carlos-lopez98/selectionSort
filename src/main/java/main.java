@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class main {
 
     /*
@@ -22,8 +24,13 @@ public class main {
 
         //See algorithms class for implementation
         algorithms.selectionSort(inputArray);
-        algorithms.bubbleSort(inputArray);
+
+        for (int i : inputArray){
+            System.out.print(i + " ");
+        }
+
+    /*    algorithms.bubbleSort(inputArray);
         algorithms.heapSort(inputArray);
-        algorithms.quickSort(inputArray);
+        algorithms.quickSort(inputArray);*/
     }
 }
